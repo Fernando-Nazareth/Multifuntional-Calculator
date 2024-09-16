@@ -1,5 +1,4 @@
 # Multifuntional-Calculator
-# Calculadora Multifuncional
 
 Esta é uma calculadora multifuncional em Python que oferece as seguintes funcionalidades:
 
