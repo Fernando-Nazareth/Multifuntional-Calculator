@@ -48,6 +48,7 @@ git clone https://github.com/seu-usuario/calculadora-multifuncional.git
 ```
 
 **2. Acessar o Diretório**
+
 Navegue até o diretório do projeto:
 
 ```bash
@@ -55,6 +56,7 @@ cd calculadora-multifuncional
 ```
 
 **3. Executar o Script**
+
 Você pode rodar o arquivo main.py para utilizar a calculadora:
 
 ```bash
@@ -62,6 +64,7 @@ python main.py
 ```
 
 **4. Usar as Funcionalidades**
+
 O programa irá apresentar um menu interativo onde você pode escolher a operação que deseja realizar:
 
 **1: Calculadora Normal (operações básicas)**
