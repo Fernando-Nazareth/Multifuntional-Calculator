@@ -42,19 +42,31 @@ def menu():
             valor = float(input("Digite o valor da temperatura: "))
             de = input("De qual unidade (C/F/K): ").upper()
             para = input("Para qual unidade (C/F/K): ").upper()
-            print(f"Resultado: {converter_temperatura(valor, de, para):.2f}")
+            resultado = converter_temperatura(valor, de, para)
+            if isinstance(resultado, (int, float)):
+                print(f"Resultado: {resultado:.2f}")
+            else:
+                print(resultado)
 
         elif sub_escolha == '2':
             valor = float(input("Digite o valor da distância: "))
             de = input("De qual unidade (M/KM/MI): ").upper()
             para = input("Para qual unidade (M/KM/MI): ").upper()
-            print(f"Resultado: {converter_distancia(valor, de, para):.2f}")
+            resultado = converter_distancia(valor, de, para)
+            if isinstance(resultado, (int, float)):
+                print(f"Resultado: {resultado:.2f}")
+            else:
+                print(resultado)
 
         elif sub_escolha == '3':
             valor = float(input("Digite o valor do peso: "))
             de = input("De qual unidade (G/KG/LB): ").upper()
             para = input("Para qual unidade (G/KG/LB): ").upper()
-            print(f"Resultado: {converter_peso(valor, de, para):.2f}")
+            resultado = converter_peso(valor, de, para)
+            if isinstance(resultado, (int, float)):
+                print(f"Resultado: {resultado:.2f}")
+            else:
+                print(resultado)
 
     elif escolha == '0':
         print("Saindo...")
