@@ -1,34 +1,110 @@
-# Multifuntional-Calculator
+#Multifuntional-Calculator
+Este repositório contém uma calculadora multifuncional desenvolvida em Python. A calculadora oferece várias funcionalidades, como:
 
-Esta é uma calculadora multifuncional em Python que oferece as seguintes funcionalidades:
-
-- **Cálculos comuns (Adição, Subtração e Divisão)**
-- **Cálculo de IMC (Índice de Massa Corporal)**
-- **Cálculo de Média**
-- **Conversões** (Temperatura, Distância e Peso)
+- **Operações matemáticas básicas (soma, subtração, multiplicação, divisão)**
+- **Cálculo de Índice de Massa Corporal (IMC)**
+- **Cálculo de média de uma lista de números**
+- **Conversão de temperaturas (Celsius, Fahrenheit, Kelvin)**
 
 ## Funcionalidades
 
-1. **IMC**: Calcula o IMC de uma pessoa com base no peso e altura.
-2. **Média**: Calcula a média de uma lista de números fornecida pelo usuário.
-3. **Conversões**:
-   - **Temperatura**: Converte entre Celsius, Fahrenheit e Kelvin.
-   - **Distância**: Converte entre metros, quilômetros e milhas.
-   - **Peso**: Converte entre gramas, quilogramas e libras.
+**Calculadora Básica:**
+Realiza operações matemáticas básicas: soma (+), subtração (-), multiplicação (*), divisão (/).
+Tratamento de erros, como divisão por zero.
 
-## Como usar
+**Cálculo de IMC:**
+Calcula o Índice de Massa Corporal com base no peso (em kg) e altura (em metros).
 
-- Execute o arquivo `main.py` e escolha a funcionalidade desejada no menu.
-- Siga as instruções para fornecer os dados necessários.
+**Cálculo de Média:**
+Calcula a média aritmética de uma lista de números inserida pelo usuário.
 
-## Requisitos
+**Conversões:**
+Conversão entre unidades de temperatura: Celsius, Fahrenheit e Kelvin.
 
-- Python 3.6 ou superior.
+## Estrutura do Projeto
+O projeto é modular, com cada funcionalidade dividida em arquivos separados para melhor organização.
+Veja a estrutura dos arquivos:
 
-## Instalação
+```kotlin
+calculadora-multifuncional/
+│
+├── main.py                  # Arquivo principal que chama as funções
+├── imc.py                   # Função de cálculo de IMC
+├── media.py                 # Função de cálculo de média
+├── calculadora.py           # Funções da calculadora básica
+├── conversoes.py            # Funções de conversões (temperatura, etc.)
+└── README.md                # Documentação do projeto
+```
 
-1. Clone o repositório:
+## Como Executar
+Siga os passos abaixo para clonar o repositório e rodar a calculadora localmente.
+
+1. Clonar o Repositório
+No terminal, clone o repositório para o seu ambiente local:
 
 ```bash
-git clone https://github.com/Fernando-Nazareth/Multifuntional-Calculator.git
+git clone https://github.com/seu-usuario/calculadora-multifuncional.git
 ```
+
+2. Acessar o Diretório
+Navegue até o diretório do projeto:
+
+```bash
+cd calculadora-multifuncional
+```
+
+3. Executar o Script
+Você pode rodar o arquivo main.py para utilizar a calculadora:
+
+```bash
+python main.py
+```
+
+4. Usar as Funcionalidades
+O programa irá apresentar um menu interativo onde você pode escolher a operação que deseja realizar:
+
+1: Calculadora Normal (operações básicas)
+2: Calcular IMC
+3: Calcular Média
+4: Conversões
+0: Sair
+
+5. Exemplo de Uso
+**Operação Básica**
+```less
+Digite o primeiro número: 10
+Escolha a operação (+, -, *, /): +
+Digite o segundo número: 5
+Resultado: 15
+```
+
+**Cálculo de IMC**
+```java
+Digite o peso (kg): 70
+Digite a altura (m): 1.75
+Seu IMC é: 22.86
+```
+
+**Cálculo de Média**
+```yaml
+Quantos números você quer calcular a média? 3
+Digite o número 1: 10
+Digite o número 2: 20
+Digite o número 3: 30
+A média é: 20.00
+```
+
+## Requisitos
+Python 3.x instalado na sua máquina.
+
+## Contribuindo
+Se você quiser contribuir com este projeto, siga as etapas abaixo:
+
+Faça um fork do projeto
+Crie uma branch para a sua feature (git checkout -b minha-feature)
+Faça commit das suas alterações (git commit -m 'Adicionar nova feature')
+Envie para o repositório remoto (git push origin minha-feature)
+Abra um Pull Request
+
+## Licença
+Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
