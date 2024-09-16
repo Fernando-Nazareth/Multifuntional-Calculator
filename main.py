@@ -1,74 +1,7 @@
-def calcular_imc(peso, altura):
-    """
-    Calcula o Índice de Massa Corporal (IMC).
-    """
-    try:
-        imc = peso / (altura ** 2)
-        return f"Seu IMC é: {imc:.2f}"
-    except ZeroDivisionError:
-        return "Altura não pode ser zero."
-    except Exception as e:
-        return f"Ocorreu um erro: {e}"
-
-
-def calcular_media(numeros):
-    """
-    Calcula a média de uma lista de números.
-    """
-    try:
-        media = sum(numeros) / len(numeros)
-        return f"A média é: {media:.2f}"
-    except ZeroDivisionError:
-        return "A lista de números não pode estar vazia."
-    except Exception as e:
-        return f"Ocorreu um erro: {e}"
-
-
-def conversao_basica(a, operador, b):
-    """
-    Realiza operações matemáticas básicas: soma, subtração, multiplicação, divisão.
-    """
-    try:
-        if operador == '+':
-            return a + b
-        elif operador == '-':
-            return a - b
-        elif operador == '*':
-            return a * b
-        elif operador == '/':
-            return a / b
-        else:
-            return "Operador inválido."
-    except ZeroDivisionError:
-        return "Erro: divisão por zero."
-    except Exception as e:
-        return f"Ocorreu um erro: {e}"
-
-
-def converter_temperatura(valor, de, para):
-    """
-    Converte temperaturas entre Celsius, Fahrenheit e Kelvin.
-    """
-    try:
-        if de == 'C':
-            if para == 'F':
-                return (valor * 9/5) + 32
-            elif para == 'K':
-                return valor + 273.15
-        elif de == 'F':
-            if para == 'C':
-                return (valor - 32) * 5/9
-            elif para == 'K':
-                return (valor - 32) * 5/9 + 273.15
-        elif de == 'K':
-            if para == 'C':
-                return valor - 273.15
-            elif para == 'F':
-                return (valor - 273.15) * 9/5 + 32
-        return "Unidade inválida."
-    except Exception as e:
-        return f"Ocorreu um erro: {e}"
-
+from imc import calcular_imc
+from media import calcular_media
+from calculadora import conversao_basica
+from conversoes import converter_temperatura
 
 def menu():
     print("Bem-vindo à Calculadora Multifuncional!")
@@ -121,4 +54,3 @@ def menu():
 if __name__ == "__main__":
     while True:
         menu()
-
