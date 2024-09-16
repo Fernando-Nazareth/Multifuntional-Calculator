@@ -39,6 +39,7 @@ calculadora-multifuncional/
 ## Como Executar
 Siga os passos abaixo para clonar o repositório e rodar a calculadora localmente.
 
+
 **1. Clonar o Repositório**
 
 No terminal, clone o repositório para o seu ambiente local:
@@ -46,6 +47,7 @@ No terminal, clone o repositório para o seu ambiente local:
 ```bash
 git clone https://github.com/seu-usuario/calculadora-multifuncional.git
 ```
+
 
 **2. Acessar o Diretório**
 
@@ -55,6 +57,7 @@ Navegue até o diretório do projeto:
 cd calculadora-multifuncional
 ```
 
+
 **3. Executar o Script**
 
 Você pode rodar o arquivo main.py para utilizar a calculadora:
@@ -63,17 +66,24 @@ Você pode rodar o arquivo main.py para utilizar a calculadora:
 python main.py
 ```
 
+
 **4. Usar as Funcionalidades**
 
 O programa irá apresentar um menu interativo onde você pode escolher a operação que deseja realizar:
 
-**1: Calculadora Normal (operações básicas)**
-**2: Calcular IMC**
-**3: Calcular Média**
-**4: Conversões**
-**0: Sair**
+1: Calculadora Normal (operações básicas)
+
+2: Calcular IMC
+
+3: Calcular Média
+
+4: Conversões
+
+0: Sair
+
 
 **5. Exemplo de Uso**
+
 **Operação Básica**
 ```less
 Digite o primeiro número: 10
