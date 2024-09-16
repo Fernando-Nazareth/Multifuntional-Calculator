@@ -109,7 +109,7 @@ A média é: 20.00
 ```
 
 ## Requisitos
-Python 3.x instalado na sua máquina.
+Python 3.11 instalado na sua máquina.
 
 ## Contribuindo
 Se você quiser contribuir com este projeto, siga as etapas abaixo:
