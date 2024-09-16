@@ -40,6 +40,7 @@ calculadora-multifuncional/
 Siga os passos abaixo para clonar o repositório e rodar a calculadora localmente.
 
 **1. Clonar o Repositório**
+
 No terminal, clone o repositório para o seu ambiente local:
 
 ```bash
