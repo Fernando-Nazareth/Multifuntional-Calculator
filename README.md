@@ -1,4 +1,4 @@
-#Multifuntional-Calculator
+# Multifuntional-Calculator
 Este repositório contém uma calculadora multifuncional desenvolvida em Python. A calculadora oferece várias funcionalidades, como:
 
 - **Operações matemáticas básicas (soma, subtração, multiplicação, divisão)**
