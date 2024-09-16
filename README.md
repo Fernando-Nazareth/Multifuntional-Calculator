@@ -2,6 +2,7 @@
 
 Esta é uma calculadora multifuncional em Python que oferece as seguintes funcionalidades:
 
+- **Cálculos comuns (Adição, Subtração e Divisão)**
 - **Cálculo de IMC (Índice de Massa Corporal)**
 - **Cálculo de Média**
 - **Conversões** (Temperatura, Distância e Peso)
